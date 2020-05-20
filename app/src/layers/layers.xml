@@ -15,11 +15,15 @@
 		<into layer="internal-dependencies">
 			<include>com.tratif.layers:*:*</include>
 		</into>
+		<into layer="company-dependencies">
+			<include>com.tratif*:*:*</include>
+		</into>
 		<into layer="dependencies"/>
 	</dependencies>
 	<layerOrder>
 		<layer>dependencies</layer>
 		<layer>spring-boot-loader</layer>
+		<layer>company-dependencies</layer>
 		<layer>internal-dependencies</layer>
 		<layer>snapshot-dependencies</layer>
 		<layer>application</layer>
