@@ -12,7 +12,7 @@
 
 	<groupId>com.tratif.layers</groupId>
 	<artifactId>layered-jar-example</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 	<name>layered-jar-example</name>
 	<description>Demo project for Spring Boot layered jars feature</description>
 
@@ -44,6 +44,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<layers>
+						<enabled>true</enabled>
+					</layers>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
