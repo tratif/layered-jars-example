@@ -14,6 +14,6 @@ public class HelloLayersController {
 		if (nonNull(name)) {
 			return "Hello in the world of layered JARs, " + name + "!";
 		}
-		return "Hello Layers!";
+		return "Hello Layers! Thank You Spring Boot community!";
 	}
 }
