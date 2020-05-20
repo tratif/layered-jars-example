@@ -5,7 +5,7 @@
 
 	<groupId>com.tratif.layers</groupId>
 	<artifactId>layered-jar-example</artifactId>
-	<version>0.0.6</version>
+	<version>0.0.7</version>
 	<name>layered-jar-example</name>
 	<description>Demo project for Spring Boot layered jars feature</description>
 	<packaging>pom</packaging>
@@ -16,6 +16,7 @@
 
 	<modules>
 		<module>app</module>
+		<module>api</module>
 	</modules>
 
 	<dependencyManagement>
@@ -28,6 +29,11 @@
 				<scope>import</scope>
 			</dependency>
 
+			<dependency>
+				<groupId>com.tratif.layers</groupId>
+				<artifactId>api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.tratif.layers</groupId>
 				<artifactId>app</artifactId>
